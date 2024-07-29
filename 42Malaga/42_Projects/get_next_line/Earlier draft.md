@@ -38,6 +38,10 @@ int	ft_find_nl(const char *str)
 	return (0);
 }
 
+/**
+* Frees the buffer allocated by malloc
+* Sets the pointer to null
+**/
 char	*ft_free_buf(char **str)
 {
 	free(*str);
