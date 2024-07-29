@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"694cbac2bcb3df2b","x":-420,"y":-380,"width":250,"height":240,"type":"text","text":"test.txt\n```\nHello world!\nThis is the second line which...\nwas broken across two lines!\n\n```"},
+		{"id":"7ad36d847874ee67","x":-400,"y":-80,"width":820,"height":380,"type":"text","text":"\n|     | remainder          | buf              | line               | temp | ret | newline_index |     |\n| --- | ------------------ | ---------------- | ------------------ | ---- | --- | ------------- | --- |\n| 0   | null               |                  | null               |      |     |               |     |\n|     | \"Hello world!\\n\\0\" | \"Hello world!\\n\" | \"Hello world!\\n\\0\" |      |     |               |     |\n"},
+		{"id":"ced3c5b83b962106","x":-140,"y":-200,"width":250,"height":60,"type":"text","text":"`BUFFER_SIZE 16`"}
+	],
+	"edges":[]
+}

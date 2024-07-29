@@ -5,7 +5,7 @@ SYNOPSIS
 ssize_t read(int** _fd_**, void** _buf_**[.**_count_**], size_t** _count_**);
 ```
 
-_fs_ is the file descriptor, 
+_fd_ is the file descriptor, 
 
 from [Wikipedia](https://en.wikipedia.org/wiki/File_descriptor)
 

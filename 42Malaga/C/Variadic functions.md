@@ -57,3 +57,30 @@ If we look at an example:
 	va_start(args, str);
 	printf("Hi %s, it's nearly %d o'clock", "Bob", 9);
 ```
+The length of `args` will be 2. There is a string argument in first position and an int argument in second position. 
+If you want to access the first argument, you will have to call `va_arg` once and specify the type of the argument. In this case, the first argument is a string, that will be defined by a pointer.
+
+If you want to access the second argument, you do the same thing. But this time the type of the argument is an "int".
+
+```c
+// access the first argument (type "string")
+va_arg( args,  char * ) // -> "Bob"
+
+// access the second argument (type "int")
+va_arg( args, int ) // -> 9
+```
+
+### `**va_end**` **- function macro**
+
+Once you have finished your program, don't forget to clean up the object you initialized by calling `va_start`.
+
+`va_end` can modify the object, which was called "args" in our previous example**,** so that it is no longer usable.
+
+```
+va_end( va_list var );
+
+// and in our example:
+va_end (args);
+```
+
+`va_end()` will free the allocated memory.
