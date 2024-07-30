@@ -31,8 +31,8 @@ Select OS  - Why?
 - [ ] For security reasons too, the paths that can be used by sudo must be restricted. Example: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
 
 
-- [ ] In addition to the root user, a user with your login as username has to be present.
-- [ ] This user has to belong to the user42 and sudo groups.
+- [ ] In addition to the root user, a **user with your login** as username has to be present.
+- [ ] This user has to belong to the **user42** and **sudo** groups.
 
 - [ ] create a simple script called monitoring.sh. It must be developed in bash. 
 - [ ] At server startup, the script will display some information on all terminals every 10 minutes (take a look at wall). 
