@@ -6,6 +6,13 @@ Select OS  - Why?
 	- [ ] **Encryption Passphrase:** ==my stupid passphrase!==
 - [ ] know the differences between aptitude and apt, or what SELinux or AppArmor is.
 - [ ] it must not be possible to connect using SSH as root.
+	- [ ] https://www.veerotech.net/kb/how-to-disable-ssh-login-for-root-user/
+	- [ ] Login to the server via SSH.
+	- [ ] Open the file “/etc/ssh/sshd_config” in any of your favorite text editors.
+	- [ ] Find the section in the file containing the line with “#PermitRootLogin yes” in it.
+	- [ ] Uncomment and change it to “PermitRootLogin no”.
+	- [ ] Save the file and exit.
+	- [ ] Restart the sshd service
 - [ ] Configure UFW (or firewalld for Rocky) firewall and leave only port 4242 open
 - [x] The **hostname** of your virtual machine must be your **login ending with 42** (e.g., wil42).
 - [ ] You will have to modify this hostname during your evaluation. 
