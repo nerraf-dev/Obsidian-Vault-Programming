@@ -3,7 +3,7 @@
 2. **Submission File**: Create a signature.txt file containing the signature of your machine’s virtual disk.
 
 ### Mandatory Part
-1. **Operating System**: 
+1. **Operating System**:
    - Choose and install the latest stable version of Debian (recommended) or Rocky.
    - Ensure SELinux (for Rocky) or AppArmor (for Debian) is running at startup and properly configured.
 
