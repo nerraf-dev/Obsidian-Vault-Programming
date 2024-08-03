@@ -1,4 +1,4 @@
-VM Location:
+Check out the [[ToDo]] list.
 
 OS Choice:
 
