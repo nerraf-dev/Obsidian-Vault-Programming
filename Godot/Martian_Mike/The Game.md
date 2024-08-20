@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Create a new project.
 Create a new scene - `level`
 
@@ -16,3 +17,7 @@ You can use transform > scale but has to be changed in each sprite.
 or can change viewport size. Change to smaller size view port, e.g. 1920 / 4 wide, and change the stretching
 ![[03-ProjSettings-Viewport.png]]
 
+=======
+
+Creating the Player:
+>>>>>>> origin/main
