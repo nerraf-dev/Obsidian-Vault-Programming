@@ -29,7 +29,7 @@ SUDO:
 			- `Defaults    requiretty`
 		- For security reasons too, the paths that can be used by sudo must be restricted. Example: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
 		- `Defaults secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"`
-	- ![[Pasted image 20240731163906.png]]
+	- ![[42Malaga/Pasted image 20240731163906.png]]
 
 
 - Configure SUDO
