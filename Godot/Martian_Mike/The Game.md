@@ -47,3 +47,7 @@ Select the frames that should be included in the animation and click the Add but
 
 For a single frame the folder icon or drag the sprite image into the frame space. 
 
+## Player Movement
+
+**Setting some gravity:
+Access the y velocity value and apply the value of gravity * delta. *
