@@ -47,7 +47,7 @@ Selecting this option creates 3 partitions on the LVM encrypted volume
 
 The drive requires an encryption passphrase, enter this during install.
 
-Passphrase: `my stupid passphrase!`
+Passphrase: `123ABCdef0`
 
 Allow the max size for partitioning and follow along.
 

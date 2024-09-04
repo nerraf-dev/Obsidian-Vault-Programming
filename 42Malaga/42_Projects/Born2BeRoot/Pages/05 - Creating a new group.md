@@ -18,15 +18,17 @@
 
 `$ sudo groupadd user42`
 
+Add user to the user42 group:
+`usermod -aG user42 USERNAME`
 #### Create a new user and add it to the group:
 It is possible to add the user to a group when creating the user using the command:
 ```bash
-sudo useradd -g users USER
+sudo useradd -g user42 USER
 ```
 
 Some distributions do not create a home directory, so the `-m `flag is required:
 ```bash
-sudo useradd -g users -m USER
+sudo useradd -g user42 -m USER
 ```
 
 **Check the user exists and is in the right group(s)**

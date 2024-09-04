@@ -5,6 +5,22 @@
    - Log all sudo actions to /var/log/sudo/.
    - Enable TTY mode for sudo.
    - Restrict sudo paths to: `/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin`.
+---
+Configuring `sudo`can be completed using `visudo` but at the very top of the file it suggests adding the content to `/etc/sudoers.d/`
+
+Create a new file  `touch /etc/sudoers.d/sudo_config`
+Edit the file:
+![[sudoers_config-file.png]]
+
+Make sure the log directory exists, if not create it: `mkdir /var/log/sudo`
+
+
+Can check is sudo is installed correctly by switching to root and running `sudo -V`
+The output may be long so its worth outpitting to a file, e.g. `sudo -V > output.txt`
+
+![[sudo-v_output.png]]
+
+---
 
 1. Install `sudo`
     - install `sudo`, issue the command: `apt install sudo` (as root user)
@@ -18,10 +34,18 @@
             - `Defaults badpass_message="Message of your choice!"
             - ![[11-sudoconfig.png]]
     - **Logging**
+
         - Each action using `sudo` has to be archived, both inputs and outputs. The log file has to be saved in the `/var/log/sudo/` folder.
-            - `sudo mkdir /var/log/sudo`
-        - Archive input and output events:
-            - `%sudo ALL = (log_input, log_output) /usr/bin/sudo` The %sudo alias represents all users who can use sudo.
+        - Add to sudoers:
+	        - `Defaults        iolog_file=/var/log/sudo-io/%C-%s.log
+	          `Defaults        iolog_dir=/var/log/sudo-io`
+		* **Configure syslog**: In Debian-based systems, the default syslog configuration is managed by the `rsyslog` package. It needs to be installed as we did not include any additional tools during installation.
+		   Create a new file `/etc/rsyslog.d/sudo-io.conf` with the following content:
+		   `:program,sudo notice /var/log/sudo-io/%C-%s.log`
+			- Restart services: Restart the sudo and rsyslog services to apply the changes:			  ```
+			  sudo service sudo restart
+				sudo service rsyslog restart
+			
     - Security:
         - The TTY mode has to be enabled for security reasons.
             - `Defaults requiretty`
