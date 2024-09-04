@@ -18,5 +18,10 @@
 
 
 ## Architecture:
-`The architecture of your operating system and its kernel version. `
-uname -a
+The architecture of your operating system and its kernel version can be found using `uname`.
+
+`uname -a`
+
+### Physical Cores
+The number of cores can be obtained from the file `/proc/cpuinfo`. 
+![[proc_cpuinfo.png]]
