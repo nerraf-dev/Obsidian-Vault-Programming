@@ -55,3 +55,7 @@ The line is long, the screenshot show word wrapping.
 - `reject_username` --> Can not contain the username inside itself.
 - `difok=7` --> Has to contain at least seven different characters from the last password used.
 - `enforce_for_root` --> We will implement this password policy to root.
+
+
+---
+<<  [[07 - SSH & the firewall]] -|- [[09 - The Script]] -- >>

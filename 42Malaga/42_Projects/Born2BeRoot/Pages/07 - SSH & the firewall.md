@@ -72,4 +72,4 @@ sudo ufw enable
 
 
 ---
-<<  [[06 - Sudo configuration]] -|- -- >>
+<<  [[06 - Sudo configuration]] -|- [[08 - Password Policy]]-- >>
