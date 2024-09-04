@@ -25,3 +25,8 @@ The architecture of your operating system and its kernel version can be found us
 ### Physical Cores
 The number of cores can be obtained from the file `/proc/cpuinfo`. 
 ![[proc_cpuinfo.png]]
+
+
+
+---
+<<  [[08 - Password Policy]] -|-  -- >>

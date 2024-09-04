@@ -5,4 +5,7 @@
 [[05 - Creating a new group]]
 [[06 - Sudo configuration]]
 [[07 - SSH & the firewall]]
+[[08 - Password Policy]]
+[[09 - The Script]]
+
 
