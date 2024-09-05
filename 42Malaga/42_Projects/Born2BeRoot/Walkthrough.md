@@ -1,4 +1,4 @@
-[[01 - Virtual Box]]
+[[01 - The Virtual Machine]]
 [[02 - The OS]]
 [[03 - The Installation]]
 [[04 - Logging In & Setting Up]]
@@ -6,6 +6,6 @@
 [[06 - Sudo configuration]]
 [[07 - SSH & the firewall]]
 [[08 - Password Policy]]
-[[09 - The Script]]
+[[10 - The Script]]
 
 

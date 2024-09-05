@@ -56,6 +56,20 @@ The line is long, the screenshot show word wrapping.
 - `difok=7` --> Has to contain at least seven different characters from the last password used.
 - `enforce_for_root` --> We will implement this password policy to root.
 
+New users created will now have to adhere to this password policy. 
+But for the root user and login user we create at the beginning, we need to manually change the time setting of days between password chagne.
+
+Use command: `sudo chage -l <username>` to check the password of root and login user.
+
+As the picture below, the minimun maximun days between password change are still defalut, because we create these two users before we create the password policy.
+
+![[root_pwd_check.png]]
+
+We need to use command: `sudo chage -m <time> <username>` and `sudo chage -M <time> <username>` to modify the days between password change.
+
+-m is minimun days, should be 2 days; -M is maximun days, shoule be 30 days.
+
+![[pwd-check.png]]
 
 ---
-<<  [[07 - SSH & the firewall]] -|- [[09 - The Script]] -- >>
+<<  [[07 - SSH & the firewall]] -|- [[10 - The Script]] -- >>

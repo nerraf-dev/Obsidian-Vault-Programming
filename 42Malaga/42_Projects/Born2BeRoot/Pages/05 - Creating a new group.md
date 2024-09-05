@@ -31,6 +31,9 @@ Some distributions do not create a home directory, so the `-m `flag is required:
 sudo useradd -g user42 -m USER
 ```
 
+
+A password can be applied using `passwd user`. Do this after the setup is complete, and the new policy will be applied.
+
 **Check the user exists and is in the right group(s)**
 `sudo id testuser`
 
