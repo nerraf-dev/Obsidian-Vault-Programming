@@ -303,5 +303,44 @@ EOF
 ```
 
 
+Setup the service and the cron job:
+
+sysinfo.service
+```
+[Unit]
+Description=System Information Display Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/sudo /Users/sfarren/sys-msg/sysinfo.sh
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+### Crontab
+What is crontab?It is a background process manager. The specified processes will be executed at the time you specify in the crontab file.
+
+To properly configure crontab, we must edit the crontab file with the following command `sudo crontab -u root -e`.
+
+In the file, we must add the following command for the script to execute every 10 minutes `*/10 * * * * sh /ruta del script`.
+
+Operation of each crontab parameter:
+
+m ➤ Corresponds to the minute at which the script will be executed, the value ranges from 0 to 59.
+
+h ➤ The exact hour, the 24-hour format is used, the values range from 0 to 23, with 0 being 12:00 midnight. dom ➤ refers to the day of the month, for example, you can specify 15 if you want to execute every day 15.
+
+dow ➤ means the day of the week, it can be numeric (0 to 7, where 0 and 7 are Sunday) or the first three letters of the day in English: mon, tue, wed, thu, fri, sat, sun.
+
+user ➤ Defines the user who will execute the command, it can be root, or another user as long as it has permission to execute the script.
+
+command ➤ Refers to the command or the absolute path of the script to be executed.
+
+
+
+
 ---
 <<  [[08 - Password Policy]] -|-  -- >>
