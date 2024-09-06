@@ -271,22 +271,35 @@ mac_address=$(ip link show | awk '/ether/ {print $2}')
 
 # SUDO COMMANDS
 # The number of commands executed with the sudo program.
-sudo_commands=$(journalctl _COMM=sudo | grep COMMAND | wc -l)
+sudo_commands=$(journalctl -q _COMM=sudo | grep COMMAND | wc -l)
 
-echo "Architecture: $arch"
-echo "Physical CPUs: $physical"
-echo "Virtual CPUs: $virtual"
-echo "Memory Usage: $used_ram/${total_ram}MB $ram_utilization"
-echo "Disk Usage: $disk_usage"
-echo "CPU Load: $cpu_usage"
-echo "Last Boot: $last_boot"
-echo "LVM Use: $lvm_active"
-echo "TCP Connections: $tcp_connections"
-echo "User log: $users"
-echo "Network: $ip_address ($mac_address)"
-echo "Sudo Commands: $sudo_commands"
+# The number of commands executed with the sudo program.
+# sudo_log="/var/log/sudo/sudo_log"
+# if sudo [ -f "$sudo_log" ]; then
+#     sudo_commands=$(sudo grep -c "COMMAND=" "$sudo_log")
+# else
+#     sudo_commands="Log file not found"
+# fi
 
+# Display information using wall
+wall <<EOF
++--------------------------------------------------+
+|                System Information                |
++--------------------------------------------------+
 
+Architecture:   $arch
+Physical CPUs:  $physical
+Virtual CPUs:   $virtual
+Memory Usage:   $used_ram/${total_ram}MB $ram_utilization
+Disk Usage:     $disk_usage
+CPU Load:       $cpu_usage
+Last Boot:      $last_boot
+LVM Use:        $lvm_active
+TCP Connections:$tcp_connections
+User log:       $users
+Network:        $ip_address ($mac_address)
+Sudo Commands: $sudo_commands
+EOF
 ```
 
 
