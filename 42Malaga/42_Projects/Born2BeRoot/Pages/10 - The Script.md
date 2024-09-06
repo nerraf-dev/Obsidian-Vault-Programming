@@ -298,35 +298,22 @@ LVM Use:        $lvm_active
 TCP Connections:$tcp_connections
 User log:       $users
 Network:        $ip_address ($mac_address)
-Sudo Commands: $sudo_commands
+Sudo Commands: $sudo_commands cmds
 EOF
 ```
 
-
-Setup the service and the cron job:
-
-sysinfo.service
-```
-[Unit]
-Description=System Information Display Service
-After=network.target
-
-[Service]
-ExecStart=/usr/bin/sudo /Users/sfarren/sys-msg/sysinfo.sh
-Type=oneshot
-
-[Install]
-WantedBy=multi-user.target
-
-```
 
 ### Crontab
 What is crontab?It is a background process manager. The specified processes will be executed at the time you specify in the crontab file.
 
 To properly configure crontab, we must edit the crontab file with the following command `sudo crontab -u root -e`.
 
-In the file, we must add the following command for the script to execute every 10 minutes `*/10 * * * * sh /ruta del script`.
-
+In the file, we must add the following command for the script to execute every 10 minutes
+```bash
+# Run sysinfo.sh every 10 minutes
+# m h dom mon dow
+*/10 * * * * sh  /home/sfarren/sys-msg/sysinfo.sh
+```
 Operation of each crontab parameter:
 
 m ➤ Corresponds to the minute at which the script will be executed, the value ranges from 0 to 59.
@@ -341,6 +328,31 @@ command ➤ Refers to the command or the absolute path of the script to be execu
 
 
 
+---
+### Install and Configure NTP
+
+#### For Debian/Ubuntu:
+
+1. **Install `ntp`**:
+    
+	```
+	sudo apt-get update
+	sudo apt-get install ntp systemd-timesyncd
+	```
+    
+2. **Enable and Start the NTP Service**:
+	```
+	sudo systemctl enable ntp
+	sudo systemctl start ntp
+	```
+	    
+
+```bash
+sudo systemctl enable ntp
+sudo systemctl start ntp
+sudo systemctl enable systemd-timesyncd
+sudo systemctl start systemd-timesyncd
+```
 
 ---
 <<  [[08 - Password Policy]] -|-  -- >>
