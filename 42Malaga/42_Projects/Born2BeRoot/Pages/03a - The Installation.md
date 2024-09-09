@@ -1,11 +1,11 @@
-### The Install
+****### The Install
 Start the VM and follow the process.
 "Do not install any graphical interface (X.org or equivalent)" So use the **Install** option
 ![[02-Installer.png]]
 Go through localisation options.
 
 > [!NOTE]
-> **Hostname Configuration**: Set the hostname to your login ending with 42 (e.g., wil42).
+> **Hostname Configuration**: Set the hostname to **your login** ending with 42 (e.g., wil42).
 
 The installer provides an option to set the **hostname**. It can be checked and edited again later via the [[hosts file]]. 
 ![[03-Installer-Hostname.png]]
@@ -38,7 +38,11 @@ User: sfarren
 Pass: 123ABCdef0
 ```
 
+
+[[03b - Partitioning]]
+
    - ***Create at least 2 encrypted partitions using LVM.***
+   - 
 Pick Use entire disk and set up encrypted LVM
 ![[05-Installer-LVM.png]]
 

@@ -1,6 +1,6 @@
 [[01 - The Virtual Machine]]
 [[02 - The OS]]
-[[03 - The Installation]]
+[[03a - The Installation]]
 [[04 - Logging In & Setting Up]]
 [[05 - Creating a new group]]
 [[06 - Sudo configuration]]

@@ -16,5 +16,5 @@ Login as the user created during install, eg newuser42. Try to switch to root. T
 
 
 ---
-<<  [[03 - The Installation]] -|- [[05 - Creating a new group]] >>
+<<  [[03a - The Installation]] -|- [[05 - Creating a new group]] >>
 
