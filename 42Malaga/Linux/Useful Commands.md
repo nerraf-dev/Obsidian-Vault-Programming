@@ -2,6 +2,8 @@
 
 `ip a` - give details of network devices
 
+
+
 ### `uname`
 Prints system information.
    With no OPTION, same as **-s**.

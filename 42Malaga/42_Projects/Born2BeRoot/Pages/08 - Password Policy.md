@@ -61,7 +61,7 @@ But for the root user and login user we create at the beginning, we need to manu
 
 Use command: `sudo chage -l <username>` to check the password of root and login user.
 
-As the picture below, the minimun maximun days between password change are still defalut, because we create these two users before we create the password policy.
+The min/max days between password change are still set as the default, as the users we added before the policy was created.
 
 ![[root_pwd_check.png]]
 

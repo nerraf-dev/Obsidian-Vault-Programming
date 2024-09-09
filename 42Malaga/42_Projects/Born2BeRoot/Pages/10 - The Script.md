@@ -273,14 +273,6 @@ mac_address=$(ip link show | awk '/ether/ {print $2}')
 # The number of commands executed with the sudo program.
 sudo_commands=$(journalctl -q _COMM=sudo | grep COMMAND | wc -l)
 
-# The number of commands executed with the sudo program.
-# sudo_log="/var/log/sudo/sudo_log"
-# if sudo [ -f "$sudo_log" ]; then
-#     sudo_commands=$(sudo grep -c "COMMAND=" "$sudo_log")
-# else
-#     sudo_commands="Log file not found"
-# fi
-
 # Display information using wall
 wall <<EOF
 +--------------------------------------------------+
@@ -310,9 +302,10 @@ To properly configure crontab, we must edit the crontab file with the following 
 
 In the file, we must add the following command for the script to execute every 10 minutes
 ```bash
-# Run sysinfo.sh every 10 minutes
+# Run monitoring.sh every 10 minutes
 # m h dom mon dow
-*/10 * * * * sh  /home/sfarren/sys-msg/sysinfo.sh
+@reboot /home/sfarren/monitoring.sh
+*/10 * * * * /home/sfarren/monitoring.sh
 ```
 Operation of each crontab parameter:
 
@@ -329,7 +322,7 @@ command ➤ Refers to the command or the absolute path of the script to be execu
 
 
 ---
-### Install and Configure NTP
+### Install and Configure NTP - Fix some time issues on the VM
 
 #### For Debian/Ubuntu:
 
