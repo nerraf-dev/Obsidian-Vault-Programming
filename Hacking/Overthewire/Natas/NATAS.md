@@ -85,7 +85,10 @@ URL:      http://natas4.natas.labs.overthewire.org
 
 ![[natas4.png]]
 
+Not allowed unless visiting form a specific place.
 
+How can this be changed?
+Hint: Requests
 
 ```
 Access granted. The password for natas5 is 0n35PkggAPm2zbEpOU802c0x0Msn1ToK
@@ -101,5 +104,29 @@ URL:      http://natas5.natas.labs.overthewire.org
 
 The page says you're not logged in. how does it know?
 
-
+Hint: How would the site know if you were logged in?
 `Access granted. The password for natas6 is 0RoJwHdSKWFTYR5WuiAewauSuNaBXned`
+
+
+# Natas Level 5 → Level 6
+
+```
+Username: natas6
+URL:      http://natas6.natas.labs.overthewire.org
+```
+
+
+Solution:
+bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
+![[natas6_solution.png]]
+
+
+# Natas Level 6 → Level 7
+
+```
+Username: natas7
+URL:      http://natas7.natas.labs.overthewire.org
+```
+
+xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q
+

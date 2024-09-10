@@ -10,8 +10,8 @@ Open VirtualBox and create a new machine.
 
 ![[01-VirtualBoxManager.png]]
 Follow the steps and fill out some settings such as RAM and Hard Drive size. 
-RAM: 1024MB
-HDD: 12GB
+For the RAM set something like `1024MB`
+For the HDD, to try to replicate the setup for the bonus set about `30GB`
 
 Select the ISO image (or download one now!) and finish the setup process. 
 
