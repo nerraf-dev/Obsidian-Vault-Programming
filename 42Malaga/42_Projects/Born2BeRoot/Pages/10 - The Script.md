@@ -295,6 +295,10 @@ EOF
 ```
 
 
+> [!NOTE] Timing
+> The task says that the script should run to display information every 10 minutes.
+> Using 
+
 ### Crontab
 What is crontab?It is a background process manager. The specified processes will be executed at the time you specify in the crontab file.
 
@@ -319,6 +323,32 @@ user ➤ Defines the user who will execute the command, it can be root, or anoth
 
 command ➤ Refers to the command or the absolute path of the script to be executed.
 
+
+Every 10 Mins from Startup:
+From here, `monitoring.sh` will be executed every 10th minute. To make it execute every ten minutes **from system startup**, we can create a `sleep.sh` script that calculates the delay between server startup time and the tenth minute of the hour, then add it to the cron job to apply the delay.
+
+`sleep.sh`
+```sh
+#!bin/bash
+
+# Get boot time minutes and seconds
+BOOT_MIN=$(uptime -s | cut -d ":" -f 2)
+BOOT_SEC=$(uptime -s | cut -d ":" -f 3)
+
+# Calculate number of seconds between the nearest 10th minute of the hour and boot time:
+# Ex: if boot time was 11:43:36
+# 43 % 10 = 3 minutes since 40th minute of the hour
+# 3 * 60 = 180 seconds since 40th minute of the hour
+# 180 + 36 = 216 seconds between nearest 10th minute of the hour and boot
+DELAY=$(bc <<< $BOOT_MIN%10*60+$BOOT_SEC)
+
+# Wait that number of seconds
+sleep $DELAY
+```
+
+```shell
+*/10 * * * * bash /root/sleep.sh && bash /root/monitoring.sh
+```
 
 
 ---

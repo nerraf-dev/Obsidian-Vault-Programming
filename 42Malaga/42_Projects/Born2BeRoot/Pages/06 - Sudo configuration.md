@@ -15,6 +15,15 @@ Configuring `sudo`can be completed using `visudo` but at the very top of the fil
 
 Create a new file  `touch /etc/sudoers.d/sudo_config`
 Edit the file:
+```
+Defaults    passwd_tries=3
+Defaults    badpass_message="Wrong password. Try again!"
+Defaults    logfile="/var/log/sudo/sudo.log"
+Defaults    log_input, log_output
+Defaults    iolog_dir="/var/log/sudo"
+Defaults    requiretty
+Defaults    secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+```
 ![[sudoers_config-file.png]]
 
 Make sure the log directory exists, if not create it: `mkdir /var/log/sudo`
