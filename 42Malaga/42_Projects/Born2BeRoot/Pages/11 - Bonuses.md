@@ -11,23 +11,23 @@ We also have to install another service of our own choice, and justify that choi
 
 
 ```shell
-$ sudo apt update
-$ sudo apt install curl
-$ sudo curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x
-$ sudo apt update 
+sudo apt update
+sudo apt install curl
+sudo curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x
+sudo apt update 
 ```
 
 Install PHP version 8.1:
 
 ```shell
-$ sudo apt install php8.1
-$ sudo apt install php-common php-cgi php-cli php-mysql
+sudo apt install php8.1
+sudo apt install php-common php-cgi php-cli php-mysql
 ```
 
 Check php version:
 
 ```shell
-$ php -v
+php -v
 ```
 
 ### Installing Lighttpd
@@ -35,30 +35,30 @@ $ php -v
 Apache may be installed due to PHP dependencies. Uninstall it if it is to avoid conflicts with lighttpd:
 
 ```shell
-$ systemctl status apache2
-$ sudo apt purge apache2
+systemctl status apache2
+sudo apt purge apache2
 ```
 
 Install lighttpd:
 
 ```shell
-$ sudo apt install lighttpd
+sudo apt install lighttpd
 ```
 
 Chack version, start, enable lighttpd and check status:
 
 ```shell
-$ sudo lighttpd -v
-$ sudo systemctl start lighttpd
-$ sudo systemctl enable lighttpd
-$ sudo systemctl status lighttpd
+sudo lighttpd -v
+sudo systemctl start lighttpd
+sudo systemctl enable lighttpd
+sudo systemctl status lighttpd
 ```
 
 Next, allow http port (port 80) through UFW:
 
 ```shell
-$ sudo ufw allow http
-$ sudo ufw status
+sudo ufw allow http
+sudo ufw status
 ```
 
 (If using NAT...)
@@ -92,7 +92,7 @@ Save and go to host browser and type in the address `http://127.0.0.1:8080/info
 Install MariaDB:
 
 ```shell
-$ sudo apt install mariadb-server
+sudo apt install mariadb-server
 ```
 
 Start, enable and check MariaDB status:
@@ -106,7 +106,7 @@ systemctl status mariadb
 Then do the MySQL secure installation:
 
 ```shell
-$ sudo mysql_secure_installation
+sudo mysql_secure_installation
 ```
 
 Answer the questions like so (root here does not mean root user of VM, it's the root user of the databases!):
@@ -126,35 +126,35 @@ Reload privilege tables now? [Y/n]:  Y
 Restart MariaDB service:
 
 ```shell
-$ sudo systemctl restart mariadb
+sudo systemctl restart mariadb
 ```
 
 Enter MariaDB interface:
 
 ```shell
-$ mysql -u root -p
+mysql -u root -p
 ```
 
 Enter MariaDB root password, then create a database for WordPress:
 
 ```sql
-MariaDB [(none)]> CREATE DATABASE wordpress_db;
-MariaDB [(none)]> CREATE USER 'admin'@'localhost' IDENTIFIED BY 'WPpassw0rd';
-MariaDB [(none)]> GRANT ALL ON wordpress_db.* TO 'admin'@'localhost' IDENTIFIED BY 'WPpassw0rd' WITH GRANT OPTION;
-MariaDB [(none)]> FLUSH PRIVILEGES;
-MariaDB [(none)]> EXIT;
+CREATE DATABASE wordpress_db;
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'Hello-WPp4ssw0rd';
+GRANT ALL ON wordpress_db.* TO 'admin'@'localhost' IDENTIFIED BY 'Hello-WPp4ssw0rd' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EXIT;
 ```
 
 Check that the database was created successfully, go back into MariaDB interface:
 
 ```shell
-$ mysql -u root -p
+mysql -u root -p
 ```
 
 And show databases:
 
 ```sql
-MariaDB [(none)]> show databases;
+show databases;
 ```
 
 You should see something like this:
@@ -178,8 +178,8 @@ If the database is there, everything's good!
 We need to install two tools:
 
 ```shell
-$ sudo apt install wget
-$ sudo apt install tar
+sudo apt install wget
+sudo apt install tar
 ```
 
 Then download the latest version of Wordpress, extract it and place the contents in `/var/www/html/` directory. Then clean up archive and extraction directory:
@@ -194,7 +194,7 @@ rm -rf latest.tar.gz wordpress/
 Create WordPress configuration file:
 
 ```shell
-$ sudo mv /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
+sudo mv /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
 ```
 
 Edit `/var/www/html/wp-config.php` with database info:
@@ -233,8 +233,11 @@ User: admin
 PWD: 123ABCdef1
 
 WP:
-si
-^6LSXqsf2JOJ$dBTG4
+~~si~~
+~~^6LSXqsf2JOJ$dBTG4~~
+
+U: sfarren
+p: iZELZvkQQ92*%aAdqZ
 
 
 ## Installing Fail2ban
@@ -283,9 +286,9 @@ sudo systemctl restart fail2ban
 To check failed connection attempts and banned IP addresses, use these commands:
 
 ```shell
-$ sudo fail2ban-client status
-$ sudo fail2ban-client status sshd
-$ sudo tail -f /var/log/fail2ban.log
+sudo fail2ban-client status
+sudo fail2ban-client status sshd
+sudo tail -f /var/log/fail2ban.log
 ```
 
 Test by setting a low value `bantime` (like 10m) in `/etc/fail2ban/jail.local` sshd settings, and try to connect multiple times via SSH with the wrong password to get banned.

@@ -9,6 +9,6 @@
 
 ![[set-port-4242-vb.png]]
 
-➤ To connect via ssh from the machine to the virstual machine using and the use the command `ssh <user>@localhost -p 4242`; it will ask for the password of the user that we are trying to log in. Once the password is introduced it will show or login in green, that will mean that the connections has been successfully.
+➤ To connect via ssh from the machine to the virtual machine using and the use the command `ssh <user>@localhost -p 4242`; it will ask for the password of the user that we are trying to log in. Once the password is introduced it will show or login in green, that will mean that the connections has been successfully.
 
-
+[[10 - The Script]] -- >>

@@ -1,4 +1,10 @@
-
+```bash
+who -b && uptime && date && last sfarren | head -n 1
+         system boot  2024-09-11 16:01
+ 16:06:17 up 9 min,  2 users,  load average: 0.01, 0.06, 0.02
+Wed 11 Sep 16:06:17 CEST 2024
+sfarren  pts/0        10.13.8.1        Wed Sep 11 16:02   still logged in
+```
 
 Time Sync with host.
 

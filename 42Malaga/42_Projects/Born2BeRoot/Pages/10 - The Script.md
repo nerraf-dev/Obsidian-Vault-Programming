@@ -52,7 +52,7 @@ This command is a pipeline of several commands used to process and extract infor
     - Sorts the extracted processor numbers numerically.
 4. **`uniq -c`**:
     
-    - Counts the number of occurrences of each unique processor number.
+    - Counts the number of occurrences of esystemctl status apache2ach unique processor number.
 5. **`awk '{print $1}'`**:
     
     - Uses `awk` to print only the first field of each line, which is the count of each unique processor number.
@@ -323,33 +323,26 @@ user ➤ Defines the user who will execute the command, it can be root, or anoth
 
 command ➤ Refers to the command or the absolute path of the script to be executed.
 
-
 Every 10 Mins from Startup:
 From here, `monitoring.sh` will be executed every 10th minute. To make it execute every ten minutes **from system startup**, we can create a `sleep.sh` script that calculates the delay between server startup time and the tenth minute of the hour, then add it to the cron job to apply the delay.
 
 `sleep.sh`
 ```sh
-#!bin/bash
+  GNU nano 7.2                        sleep.sh *                                
+#!/bin/bash
 
-# Get boot time minutes and seconds
-BOOT_MIN=$(uptime -s | cut -d ":" -f 2)
-BOOT_SEC=$(uptime -s | cut -d ":" -f 3)
+# Run the monitoring script every 10 minutes
+while true; do
+  bash /home/sfarren/monitoring.sh
+  sleep 600  # Sleep for 600 seconds (10 minutes)
+done
 
-# Calculate number of seconds between the nearest 10th minute of the hour and boot time:
-# Ex: if boot time was 11:43:36
-# 43 % 10 = 3 minutes since 40th minute of the hour
-# 3 * 60 = 180 seconds since 40th minute of the hour
-# 180 + 36 = 216 seconds between nearest 10th minute of the hour and boot
-DELAY=$(bc <<< $BOOT_MIN%10*60+$BOOT_SEC)
-
-# Wait that number of seconds
-sleep $DELAY
 ```
 
 ```shell
-*/10 * * * * bash /root/sleep.sh && bash /root/monitoring.sh
+@reboot /home/sfareen/sleep.sh & 
 ```
-
+the `&` makes the script run in the background
 
 ---
 ### Install and Configure NTP - Fix some time issues on the VM

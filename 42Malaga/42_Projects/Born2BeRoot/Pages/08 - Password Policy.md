@@ -12,7 +12,7 @@ sudo nano /etc/login.defs
 
 Once open it's time to start modifying:
 
-![[password_aaging.png]]
+![[password_aging.png]]
 
 Look for:
 ```
@@ -74,17 +74,18 @@ Change user passwords to comply with password policy:
 $ sudo passwd <user/root>
 ```
 
-
+---
+~~alternative:~~
 ```bash
 sudo nano /etc/pam.d/common-password
 ```
 
-Need to look for the line ending `retry=3`
-and add 
+~~Need to look for the line ending `retry=3`~~
+~~and add~~ 
 
-![[password_policy.png]]
+~~![[password_policy.png]]~~
 
-The line is long, the screenshot show word wrapping.
+~~The line is long, the screenshot show word wrapping.~~
 
 
 **The commands:**
@@ -96,6 +97,7 @@ The line is long, the screenshot show word wrapping.
 - `reject_username` --> Can not contain the username inside itself.
 - `difok=7` --> Has to contain at least seven different characters from the last password used.
 - `enforce_for_root` --> We will implement this password policy to root.
+---
 
 New users created will now have to adhere to this password policy. 
 But for the root user and login user we create at the beginning, we need to manually change the time setting of days between password chagne.
@@ -113,4 +115,4 @@ We need to use command: `sudo chage -m <time> <username>` and `sudo chage -M 
 ![[pwd-check.png]]
 
 ---
-<<  [[07 - SSH & the firewall]] -|- [[10 - The Script]] -- >>
+<<  [[07 - SSH & the firewall]] -|- [[09 - Connect Via SSH]] -- >>

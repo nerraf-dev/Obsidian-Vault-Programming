@@ -28,38 +28,40 @@ By Adrian Musso-Gonzalez (@amusso-g)
 - [ ] Ensure that the machine does not have a graphical environment at launch.  
 - [ ] Connect to VM as a created user (which isn’t a root)  
 - [ ] Ensure the password follows the required policy (2 days min, 7, 30 days max).   
-      ***sudo chage \-l username***  
+     `sudo chage \-l username`
 - [ ] Evaluator checks UFW service is started.  
-      ***sudo ufw status**			//look for status: active*  
+      `sudo ufw status`		//look for status: active*
 - [ ] Evaluator checks SSH service is started.  
-      ***sudo systemctl status ssh***  
+      `sudo systemctl status ssh`
         
 - [ ] Evaluator checks the chosen operating system (Debian or CentOS).  
-      ***lsb\_release \-a || cat /etc/os-release***
+      `lsb\_release \-a` || `cat /etc/os-release`
 
 ***User***
 
 - [ ] The subject requests that a user with the login of the student being evaluated is present on the virtual machine. Check that it has been added and that it belongs to “sudo” and “user42” groups.
 
-***getent group sudo***  
-***getent group user42***
+`getent group sudo`  
+`getent group user42`
 
 **Password policy check:**
 
 - [ ] Create new user (e.g. user42).
 
-***sudo adduser new\_username***
+`sudo adduser new_username`
 
 - [ ] Assign a password of your choice, respecting subject rules.
 
-***getent group sudo***
+`getent group sudo`
 
 - [ ] Explanation from student explaining how to implement the password policy.   
 - [ ] Normally there should be one or two modified files. If there is any problem, the evaluation stops here.  
 - [ ] With the new user, ask the student to create a group named “evaluating” and assign it to the new user.
 
-***sudo groupadd evaluating***  
-***sudo usermod \-aG evaluating your\_new\_username***
+```
+sudo groupadd evaluating
+sudo usermod -aG evaluating your_new_username
+```
 
 - [ ] Check if the new user belongs to the “evaluating” group.
 

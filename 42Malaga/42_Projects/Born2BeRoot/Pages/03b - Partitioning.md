@@ -31,63 +31,64 @@ Now move on to sda5:
 ![[sda5.png]]
 
 Create a new partition in this space:
-![[Pasted image 20240910142432.png]]
+![[install-partition-create-new.png]]
 ![[sda5-max-space.png]]
 \Make this a logical partition
 ![[install-logical-partition.png]]\
 Modify the mount point and choose not to mount it:
-![[Pasted image 20240910142656.png]]
+![[install-partition-mount-location.png]]
 This partition is going to be split further with these 'sub partitions' being mounted. 
 
+### Encrypted Volumes
 Now configure encrypted volumes
-![[Pasted image 20240910142752.png]]
+![[install-partitions-config-encrypted.png]]
 Say yes to writing the scheme to disk
-![[Pasted image 20240910142828.png]]
+![[install-partitions-confirm-encrypt.png]]
 
 and create encrypted volumes:
-![[Pasted image 20240910142850.png]]
+![[install-partitions-create-encrypt.png]]
 
 Select the sda5 volume to encrypt:
-![[Pasted image 20240910142925.png]]
+![[install-partitions-select-encrypted-vol.png]]
 
-![[Pasted image 20240910142943.png]]
+![[install-partitions-finish-setting-encrypted-vol.png]]
 
-![[Pasted image 20240910143006.png]]
+![[install-partitions-finish-encryption.png]]
 
-![[Pasted image 20240910143025.png]]
+![[install-partitions-confirm-encryption.png]]
 
-![[Pasted image 20240910143037.png]]
+![[install-partitions-erase-disk.png]]
 
-![[Pasted image 20240910143056.png]]
+![[install-partitions-set-passphrase.png]]
 
  We will configure the logical volume manager.
- ![[Pasted image 20240910143145.png]]
+ ![[install-partitions-config-lvm.png]]
 
-![[Pasted image 20240910143205.png]]
+![[install-partitions-write-lvm.png]]
 
 We will create a new volume group. Volume groups group partitions
-![[Pasted image 20240910143242.png]]
+![[install-partitions-create-vol-group.png]]
 
 Enter the name we want to give it. `LVMGroup` as indicated in the subject.
-![[Pasted image 20240910143331.png]]
+![[install-partitions-name-vol-group.png]]
 Select the volume sda5
-![[Pasted image 20240910143357.png]]
+![[install-partitions-sda5-as-vol-group.png]]
 
 Create the remaining volumes:
-![[Pasted image 20240910143440.png]]
+![[install-partitions-bonus-example-setup.png]]
 
 Create a logical volume:
-![[Pasted image 20240910143656.png]]
+![[install-partitions-create-encrypted-volumes.png]]
 Select the volume group:
-![[Pasted image 20240910143711.png]]
+![[install-partitions-select-vol-group.png]]
 Enter the first logical volume name, `root`.
-![[Pasted image 20240910143726.png]]
+![[install-partitions-name-encrypted-volume.png]]
 Enter the size as in the subject, 10G
-![[Pasted image 20240910143748.png]]
+![[install-partitions-set-vol-size.png]]
 Repeat for `swap`
 
-![[Pasted image 20240910143842.png]]
-![[Pasted image 20240910143905.png]]
+![[install-partitions-name-swap.png]]
+![[install-partitions-set-swap-size.png]]
 
 
 home
@@ -116,29 +117,29 @@ var--log
 	Mount: /var/log
 ```
 
-![[Pasted image 20240910144529.png]]
+![[install-partitions-finish-creating-enc-vols.png]]
 
 Now we need to configure the filesystem and mountpoints.
 Select the home partition:
-![[Pasted image 20240910144638.png]]
+![[install-partitions-setting-mountpoints.png]]
 
 Chose Use As:
-![[Pasted image 20240910144705.png]]
+![[install-partitions-set-filesytem.png]]
 Pick Ext4
-![[Pasted image 20240910144722.png]]
+![[install-partitions-select-ext4.png]]
 
 Modify the mount point:
-![[Pasted image 20240910144748.png]]
+![[install-partitions-set-home-mountpoint.png]]
 
-![[Pasted image 20240910144800.png]]
+![[install-partitions-home-mountpoint.png]]
 
-![[Pasted image 20240910144816.png]]
+![[install-partitions-done-home.png]]
 
 Repeat:
 Root:
 ![[Pasted image 20240910144850.png]]
 Pick Ext4
-![[Pasted image 20240910144722.png]]
+![[install-partitions-select-ext4.png]]
 
 ![[Pasted image 20240910144925.png]]
 

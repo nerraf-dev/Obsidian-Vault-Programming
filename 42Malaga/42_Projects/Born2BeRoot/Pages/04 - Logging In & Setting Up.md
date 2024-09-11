@@ -1,4 +1,4 @@
-sfarrenOnce installation is complete, login as `root` and the user created during installation.
+Once installation is complete, login as `root` and the user created during installation.
 
 The new user needs to be added to the `sudo` group. First `sudo` needs to be installed using `apt` as the `root` user.
 
