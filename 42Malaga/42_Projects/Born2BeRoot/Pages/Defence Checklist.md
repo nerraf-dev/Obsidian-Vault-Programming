@@ -9,9 +9,9 @@ By Adrian Musso-Gonzalez (@amusso-g)
 
 ### General instructions
 
-- [ ] Git repo contains a signature.txt file.  
-- [ ] Check the signature against the students “.vdi” file, make sure it’s identical.   
-- [ ] Clone VM || create a snapshot hostnamectl&& open VM.
+- [ ] Git repo contains a `signature.txt` file.  
+- [ ] Check the signature against the students `.vdi` file, make sure it’s identical.   
+- [ ] Clone VM || create a snapshot hostnamectl && open VM.
 
 ### Mandatory Part (Questions for the student)
 
@@ -26,16 +26,19 @@ By Adrian Musso-Gonzalez (@amusso-g)
 ### Simple setup
 
 - [ ] Ensure that the machine does not have a graphical environment at launch.  
+	- [ ] run `ls /usr/bin/*session`
+	- [ ] should return `/usr/bin/dbus-run-session`
 - [ ] Connect to VM as a created user (which isn’t a root)  
 - [ ] Ensure the password follows the required policy (2 days min, 7, 30 days max).   
-     `sudo chage \-l username`
+     `sudo chage -l username`
 - [ ] Evaluator checks UFW service is started.  
       `sudo ufw status`		//look for status: active*
 - [ ] Evaluator checks SSH service is started.  
+      `sudo service ssh status` or
       `sudo systemctl status ssh`
         
 - [ ] Evaluator checks the chosen operating system (Debian or CentOS).  
-      `lsb\_release \-a` || `cat /etc/os-release`
+      `cat /etc/os-release`
 
 ### User
 
@@ -51,14 +54,15 @@ By Adrian Musso-Gonzalez (@amusso-g)
 `sudo adduser new_username`
 
 - [ ] Assign a password of your choice, respecting subject rules.
+	- [ ] `passwd username`
 
 `getent group sudo`
 
 - [ ] Explanation from student explaining how to implement the password policy.   
 	[[08 - Password Policy]]
 		Modify the two files...
-		`sudo nano /etc/login.defs`
-		`sudo nano /etc/security/pwquality.conf`
+		`sudo nano /etc/login.defs`   ==--- PASSWORD AGING==
+		`sudo nano /etc/security/pwquality.conf`  ==---QUALITY SETTINGS==
 		
 - [ ] Normally there should be one or two modified files. If there is any problem, the evaluation stops here.  
 - [ ] With the new user, ask the student to create a group named “evaluating” and assign it to the new user.
@@ -75,7 +79,7 @@ sudo usermod -aG evaluating your_new_username
 - [ ] Ask the student to explain advantages of the password policy (beyond the fact that it is required for the project)   
 - [ ] Ask the student the advantages/disadvantages of the policy implementation.
 
-**Hostname and partitions**
+### Hostname and partitions
 
 - [ ] Check the hostname of the machine is correctly formatted as follows: login42 (login of the student being evaluated).
 
@@ -84,7 +88,7 @@ sudo usermod -aG evaluating your_new_username
 - [ ] Modify this hostname by replacing the login with yours, then restart VM.
 
 ```
-sudo hostnamectl set-hostname new\_hostname 
+sudo hostnamectl set-hostname new_hostname 
 sudo reboot
 ```
 *Note:	If on restart, the hostname has not been updated, the evaluation stops here.*
@@ -92,7 +96,7 @@ sudo reboot
 - [ ] Restore the machine to the original hostname, then restart VM.
 
 ```
-sudo hostnamectl set-hostname new\_hostname
+sudo hostnamectl set-hostname new_hostname
 sudo reboot
 ```
 
@@ -107,10 +111,13 @@ sudo reboot
 
 - [ ] Check that the “sudo” program is properly installed on the virtual machine.
 
-`dpkg \-l | grep sudo`
+`dpkg -l | grep sudo`
 
 - [ ] The student being evaluated shows assigning a new user to the “sudo” group.  
 - [ ] The subject imposes strict rules for sudo. The student being evaluated must explain the value and operation of sudo using examples of their choice.
+
+
+==Changes are made in the `/etc/sudoers.d/sudo_config`==
 
 `sudo visudo ls`
 
