@@ -17,6 +17,7 @@ By Adrian Musso-Gonzalez (@amusso-g)
 
 - [ ] *How does a virtual machine work and what is its purpose?*  
 - [ ] *The basic differences between CentOS and Debian?*  
+	- [ ] ==Debian has plenty of community support, tutorials, found on products like the RPi etc.==
 - [ ] *Their choice of operating system?*  
 - [ ] *If CentOS: what SELinux and DNF are.*  
 - [ ] *If Debian: the difference between aptitude, apt and what APPArmor is.*  
@@ -112,7 +113,6 @@ sudo reboot
 - [ ] Check that the “sudo” program is properly installed on the virtual machine.
 
 `dpkg -l | grep sudo`
-
 - [ ] The student being evaluated shows assigning a new user to the “sudo” group.  
 - [ ] The subject imposes strict rules for sudo. The student being evaluated must explain the value and operation of sudo using examples of their choice.
 

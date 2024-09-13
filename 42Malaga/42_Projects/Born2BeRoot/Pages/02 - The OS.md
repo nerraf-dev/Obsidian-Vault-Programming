@@ -12,7 +12,7 @@ Selected Debian for it's popularity. Commonly used, plenty of documentation and 
 
 ### Differences between apt and aptitude ↙️
 
-Aptitude is an enhanced version of apt. APT is a lower-level package manager and aptitude is a high-level package manager. Another big difference is the functionality offered by both tools. Both are able to provide the necessary means to perform package management.
+Aptitude is an enhanced version of apt. APT is a lower-level package manager where as aptitude is seen as a high-level package manager because of its GUI. Another big difference is the functionality offered by both tools. Both are able to provide the necessary means to perform package management.
 ### APPArmor
 
 AppArmor is a framework for enhancing security. It defines access rules for applications, deciding what files can be accessed and what rights can be given. 
