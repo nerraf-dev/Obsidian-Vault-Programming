@@ -141,34 +141,34 @@ Root:
 Pick Ext4
 ![[install-partitions-select-ext4.png]]
 
-![[Pasted image 20240910144925.png]]
+![[install-partitions-root-mount.png]]
 
-![[Pasted image 20240910145000.png]]
+![[install-partitions-root-mount-2.png]]
 
-![[Pasted image 20240910145017.png]]
+![[install-partitions-root-mount-complete.png]]
 
 srv:
 Use Ext4 and set the mountpoint to /srv
 
 Swap:
 For swap instead of ext4, select `swap area`
-![[Pasted image 20240910145158.png]]
+![[install-partitions-use-as-swap.png]]
 
 tmp:
 Use ext4 and mount to /tmp
 
 var--log:
 Use ext4 and mount to a manual location:
-![[Pasted image 20240910145427.png]]
+![[install-partitions-var--log-manual-mount.png]]
 
 enter `/var/log`
-![[Pasted image 20240910145453.png]]
+![[install-partitions-var--log-mount-path.png]]
 
 Once the changes have been made, scroll to Finish partitioning...
-![[Pasted image 20240910145542.png]]
+![[install-partitions-finish-partitioning-select.png]]
 
 Write the changes to disk:
-![[Pasted image 20240910145607.png]]
+![[install-partitions-write-changes.png]]
 
 
 
