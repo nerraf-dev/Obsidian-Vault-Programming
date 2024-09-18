@@ -8,7 +8,7 @@ To accommodate negative numbers, calculate the offset as follows:
 
 where `minValue` is the smallest number in the input array. This offset ensures that the negative indices are correctly mapped to the auxiliary array.
 
-Example
+**Example**
 
 Suppose the input array contains the elements `-2`, `0`, `1`, `3`, and `-5`. The minimum value is `-5`, so the offset would be `offset = 0 - (-5) = 5`.
 
