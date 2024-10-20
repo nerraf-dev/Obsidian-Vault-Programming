@@ -69,4 +69,4 @@ The installer can setup SSH, but in this attempt I will go through installing it
 ---
 <<  [[02 - The OS]] -|- [[04 - Logging In & Setting Up]] >>
 
-[[Walkthrough]]
+[[00 - Walkthrough]]

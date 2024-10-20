@@ -27,4 +27,4 @@ It is a logical volume manager. It provides a method for allocating space on mas
 ---
 <<  [[01 - The Virtual Machine]] -|-[[03a - The Installation]]  >>
 
-[[Walkthrough]]
+[[00 - Walkthrough]]

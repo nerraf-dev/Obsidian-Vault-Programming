@@ -21,4 +21,4 @@ Example using Debian
 
 
 ---
-<<  [[Walkthrough]] -|- [[02 - The OS]]  >>
+<<  [[00 - Walkthrough]] -|- [[02 - The OS]]  >>

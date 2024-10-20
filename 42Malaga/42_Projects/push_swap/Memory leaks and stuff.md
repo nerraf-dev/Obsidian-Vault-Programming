@@ -34,3 +34,16 @@ then
  or pass the args in initially `lldb ./push_swap 9 8 7` the `run`
 
 
+If you see something like:
+```bash
+Process 8727 launched: '/.../push_swap' (x86_64)
+arr: 9 - rank[0] = 2
+arr: 7 - rank[1] = 0
+arr: 8 - rank[2] = 1
+Value: 9, Rank: 2
+Value: 7, Rank: 0
+Value: 8, Rank: 1
+Process 8727 exited with status = 0 (0x00000000) 
+```
+
+nothing major happened.
