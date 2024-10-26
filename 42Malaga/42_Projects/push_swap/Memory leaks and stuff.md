@@ -47,3 +47,35 @@ Process 8727 exited with status = 0 (0x00000000)
 ```
 
 nothing major happened.
+
+## Valgrind
+![[valgrind_terminal_example.png]]
+
+```bash
+ valgrind --leak-check=full --track-origins=yes ./push_swap "5 3 7 1 -9"
+==292529== Memcheck, a memory error detector
+==292529== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==292529== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==292529== Command: ./push_swap 5\ 3\ 7\ 1\ -9
+==292529== 
+pb
+pb
+ra
+sa
+rra
+pa
+ra
+pa
+ra
+ra
+==292529== 
+==292529== HEAP SUMMARY:
+==292529==     in use at exit: 0 bytes in 0 blocks
+==292529==   total heap usage: 12 allocs, 12 frees, 279 bytes allocated
+==292529== 
+==292529== All heap blocks were freed -- no leaks are possible
+==292529== 
+==292529== For lists of detected and suppressed errors, rerun with: -s
+==292529== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+```
+
