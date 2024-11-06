@@ -7,24 +7,20 @@ To create a user-friendly food inventory management application that helps users
 **Objectives:**
 
 1. **Product Management:**
-    
     - Allow users to add, edit, and delete food items.
     - Enable users to scan barcodes to automatically fetch product information (e.g., name, expiration date, nutritional information).
     - Provide options to set expiration dates and quantity for each item.
     - Allow users to organise products by location (e.g., fridge, pantry, freezer).
 2. **Inventory Tracking:**
-    
     - Display a clear and organised list of food items.
     - Sort items by expiration date, category, or other relevant criteria.
     - Generate shopping lists based on low-stock items or upcoming expiration dates.
     - Track product usage and consumption to help reduce food waste.
 3. **User Interface:**
-    
     - Design an intuitive and user-friendly interface.
     - Ensure a smooth user experience on various devices (web, mobile).
     - Provide clear instructions and helpful tips.
 4. **Data Security and Privacy:**
-    
     - Implement robust security measures to protect user data.
     - Ensure compliance with relevant data privacy regulations (e.g., GDPR).
 5. **Image Recognition:**
