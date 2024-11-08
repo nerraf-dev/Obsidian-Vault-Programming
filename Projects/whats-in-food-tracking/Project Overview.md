@@ -102,7 +102,7 @@ To create a user-friendly food inventory management application that helps users
 - **Barcode Scanning:** Barcode scanner library for mobile devices (e.g., ZXing, BarcodeScanner).
 - **Image Recognition:** TensorFlow or PyTorch for building and deploying image recognition models.
 - **Cloud Storage:** AWS S3 or Google Cloud Storage for storing user data and images.
-- **Authentication and Authorization:** OAuth, JWT, or custom authentication mechanisms.
+- **Authentication and Authorisation:** OAuth, JWT, or custom authentication mechanisms.
 
 
 ## Project Timeline
