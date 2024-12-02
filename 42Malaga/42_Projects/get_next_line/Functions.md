@@ -71,7 +71,7 @@ int		gnl_find_nl(const char *str);
 
 ```
 
-additonal functions in `get_next_line.c`
+Additional functions in `get_next_line.c`
 ```c
 /**
  * Retrieves the next line from a given buffer.
