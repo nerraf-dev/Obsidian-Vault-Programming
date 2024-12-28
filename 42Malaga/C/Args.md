@@ -1,10 +1,13 @@
 
 
 ```c
+
 #include <stdio.h>
 
 int	main(int argc, char **argv)
 {
+	int	i;
+
 	if (argc == 1)
 	{
 		printf("No arguments provided.\n");
@@ -12,10 +15,9 @@ int	main(int argc, char **argv)
 	else
 	{
 		printf("Arguments provided:\n");
-		for (int i = 1; i < argc; i++)
-		{
-			printf("%d\n", (int)argv[i]);
-		}
+		i = 1;
+		while (i < argc)
+			printf("%s\n", argv[i++]);
 	}
 	return (0);
 }
