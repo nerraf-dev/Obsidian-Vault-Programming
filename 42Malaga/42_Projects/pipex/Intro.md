@@ -7,6 +7,7 @@
 | **External functs.** | `open, close, read, write, malloc, free, perror, strerror, access, dup, dup2, execve, exit, fork, pipe, unlink, wait, waitpid` |
 | **Libft authorized** | `Yes`                                                                                                                          |
 | **Description**      | `This project is about handling pipes.`                                                                                        |
+|                      |                                                                                                                                |
 
 Your program will be executed as follows:
 
