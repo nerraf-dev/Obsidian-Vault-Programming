@@ -1,0 +1,9 @@
+Today's 'Digital' world facade for the Analogue.
+
+The digital world is firmly embedded in all aspects of our lives whether you like it or not. Personally, I'm on the side of liking it. I say 'side' rather than straight out saying 'it's great' is because it's not really a binary choice. You don't even have to think that hard to think of positive and negative aspects, and this is normal. We're talking about real, actual life.
+
+"WTF are you on about? "I'm sure is being asked. Well, I'm fed up with what I see as a 'digitisation' of everything. I don't mean things like the move to online shopping, banking, entertainment, and all the rest. I mean literally everything, peoples 'way of thinking'. At times it feels that many people think that everything works in binary form, by with I mean you get two choices. I'm sure that this thought isn't new, I'm sure that the sort of great ideas and opinions form some of the current crop of 'great thinkers', 'literary greats', and other various 'activists' have come up before. *We know that **some** of these things have been tried out in the last century*. The digital world brings us news and information, up to date, all the time. It also brings other people thoughts, on everything, constantly. Platforms and 'news' sites delivering feeds of ragebait and bullshit. All delivered with a chance to share highly useful single line comments and weird fantasy anecdotes. Even better are the intellectual classics such as 'agreed' and '💯'.
+
+"Again...wtf is this?". Right.. the point...and less waffle. So...I'm fed up with people and their shitty 0/1 way of thinking. So...the digital word: good or bad, there's more to it. I like the convenience, I like the choice (sometimes) but should I like the tracking? never actually owning anything? No. 
+
+If you've got this far, well done, 
