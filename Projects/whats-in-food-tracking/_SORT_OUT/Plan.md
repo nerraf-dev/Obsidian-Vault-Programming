@@ -1,6 +1,6 @@
 ## Documenting Your Food Inventory App Development Process
 
-### 1. **[[Project Overview]]**
+### 1. **[[Projects/whats-in-food-tracking/_SORT_OUT/Project Overview]]**
 
 - Project Goal
 - Target Audience
