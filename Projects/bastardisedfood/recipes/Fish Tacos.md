@@ -1,40 +1,74 @@
-## Fish Tacos 10/04
+# Fish Tacos  
 
-### Ingredients:
-1. White fish
-2. Avocado
-3. Cabbage
-4. Carrot
-5. Tomato
-6. Onion
-7. Lime juice
-8. Spicy paprika
-9. cumin
-10. chilli flakes
-11. Hot sauce
-12. Pepper
-13. Salt
-### Method:
-1. Chop up the onion and tomato, smash the avocado, slice the cabbage and grate the carrot.
-2. Mix up some spices and seasoning with some lime juice. Add the lime juice a bit at a time as you want more of a paste than a dressing or sauce.
-3. Coat the fish in the paste.
-   I used some frozen cod for the air fryer for this attempt and will look to do another without the frozen fish at some point. The coating worked and stuck, the fish came out of the air fryer looking kind of good but I don't think the taste will really get in there. 
-4. Cook off the fish, I used the air fryer and it took about twice as long as the instructions on the 'air fryer fish' packet stated. 
+*Crunchy, zesty, and unapologetically inauthentic - because tacos don't need passports.*  
 
-> [!TIP]
->    "**Air Fryer Tip**: Frozen cod works, but fresh will absorb more flavour. Cook at 180°C for 12-15 mins (double-check with a fork)."
+**Serves** about 4
+## 📝 Ingredients  
+- **Fish**:  
+  - 2 white fish fillets (cod/haddock)  
+  - 1 tbsp spicy paprika  
+  - ½ tsp cumin  
+  - ½ tsp chilli flakes  
+  - 1 lime (juiced)  
+  - Salt & pepper  
+- **Toppings**:  
+  - 1 avocado  
+  - ¼ cabbage, shredded  
+  - 1 carrot, grated  
+  - 1 tomato, diced  
+  - ½ onion, finely chopped  
+- **Extras**:  
+  - Tortillas  
+  - Hot sauce  
+  - Oil/vinegar (for coleslaw)  
 
-5. Whilst the fish is in throw together a couple of things to chuck on the side, on the taco or with something else.
-	- The avocado with lime juice, salt, pepper and chilli flakes. Chuck in a bit of the onion and the tomato too, why not, and mix yourself a rough guacamole. 
-	-  Make a simple coleslaw mixing the carrot, cabbage and some of the onion (if it's fine)  with some salt, pepper, a drop of oil and vinegar.I  chuck a bit of lemon juice in there too if its about. 
-6. When the fish is cooked is should break and flake apart nicely giving some good chunks to chuck in to a tortilla.
-7. And on that, might want to heat the tortillas. However you'd do it is fine. If i can be bothered I try and make up some fried hardshells, this time though it was a simple heat in a hot frying pan.
-8. Grab a tortilla, and stuff how you like. Chuck on some hot sauce if you fancy. 
+## 👩‍🍳 Method  
+1. **Prep**:  
+   - Chop onion/tomato, smash avocado, shred cabbage, grate carrot.  
+   - Mix spices with lime juice to form a paste (add juice slowly).  
 
-### Budget Breakdown  
-- **Cheapest swap**: Use something instead of something else.  
-- **Pantry savers**: Paprika, cumin, and chilli flakes last ages—worth the initial spend.  
-- **Total cost**: ~£99999
-### 🎸 Soundtrack
-- aaa
-- aaa
+2. **Fish**:  
+   - Coat fish in spice paste.  
+   - **Air fryer**: 180°C for 12-15 mins (fresh) or 18-20 mins (frozen).  
+     > [!TIP]  
+     > *"Frozen works, but fresh absorbs more flavor. Fork-test for flakiness."*  
+
+3. **Sides**:  
+   - **Guac**: Smash avocado + lime + salt + chilli flakes + onion/tomato.  
+   - **Slaw**: Mix cabbage, carrot, onion + salt, pepper, oil, vinegar.  
+
+4. **Serve**:  
+   - Heat tortillas in dry pan (30 secs/side).  
+   - Flake fish into chunks, load up tacos with slaw/guac.  
+   - Drown in hot sauce (optional but recommended).  
+
+## 💰 Budget Notes
+- **Cheap swap**: Frozen fish vs fresh (saves ~€[X]).  
+- **Pantry heroes**: Spices last months.  
+- **Total cost**: ~€[X] (add later)  
+
+## ⏱️ Timings
+- Prep: [X] mins | Cook: [X] mins | Total: [X] mins  
+
+## 🎸 Soundtrack  
+- Dancer - IDLES
+- Statuette On The Console - BODEGA
+- Relieved - DEADLETTER
+- Gift Horse - IDLES
+- Dog Dribble - Getdown Services
+- Jobseeker - Sleaford Mods
+- 100% Endurance - Yard Act
+- King of the Slugs - Fat Dog
+- Jiu Jits You - Panic Shack
+- Ain't No Thief - Viagra Boys
+- Never Fight a Man With a Perm - IDLES
+- U Should Not Be Doing That - Amyl and The Sniffers
+- Tweet Tweet Tweet - Sleaford Mods
+- I Love You Baby - Opus Kink
+- Lads Lads Lads - Lambrini Girls
+- POP POP POP - IDLES
+- Drop - HotWax
+
+---
+
+**Pro Tip**: Double the spice paste - it keeps for 3 days in the fridge!  

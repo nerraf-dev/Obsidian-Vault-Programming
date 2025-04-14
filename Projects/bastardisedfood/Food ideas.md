@@ -1,0 +1,8 @@
+- https://www.bbc.co.uk/food/recipes/easy_okonomiyaki_78828 (cabbage and onion fritters + sauce)
+- https://www.bbc.co.uk/food/recipes/pork_smash_tacos_93742
+- https://www.bbc.co.uk/food/recipes/masala_omelette_with_80543
+- https://www.bbc.co.uk/food/recipes/cheats_frying_pan_61050 (pizza)
+- https://www.bbc.co.uk/food/recipes/sweet_potato_and_chorizo_41141 (# Air fryer sweet potato and chorizo hash)
+- https://www.bbc.co.uk/food/recipes/tomato_chickpea_and_78792 (pasta soup)
+- https://www.bbc.co.uk/food/recipes/1_hoisin_spinach_and_egg_86057 (noodles)
+- https://www.bbc.co.uk/food/recipes/gnocchi_pasta_bake_51351
